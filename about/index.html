@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="zh-TN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>about | Welcome</title><meta name="author" content="Heisenbergger,541194756@qq.com"><meta name="copyright" content="Heisenbergger"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="Welcome">
+<meta property="og:locale" content="zh_TN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2023-06-30T07:57:51.000Z">
+<meta property="article:modified_time" content="2025-08-13T07:25:30.000Z">
+<meta property="article:author" content="Heisenbergger">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/about/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'about',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page type-about" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Welcome</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class="title-seo">about</h1></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="page-title">about</div><div id="about-container"><section class="top-section"><div class="top-content"><div class="float-texts"><div class="float-text float-text-1">🐝 勤劳小蜜蜂</div><div class="float-text float-text-2">🧱 踏实实在人</div><div class="float-text float-text-3">👷‍♀️ 努力小天使</div><div class="float-text float-text-4">🐔 乐观大白鹅</div></div><div class="avatar-container"><img class="no-lightbox avatar" src="https://blog.liushen.fun/info/avatar.ico" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt=""></div><div class="float-texts"><div class="float-text float-text-5">阳光小少年 👱‍♀️</div><div class="float-text float-text-6">温暖小太阳 ☀️</div><div class="float-text float-text-7">可爱小白兔 🐰</div><div class="float-text float-text-8">懒惰小胖猪 🐗</div></div></div><div class="site-name">清羽飞扬</div><div class="motto">柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜</div></section><section class="info-section"><div class="left-column card"><div class="personal-info"><h2 class="section-title">个人信息</h2><div class="info-grid"><p> <strong>姓名: </strong>陈果</p><p> <strong>性别: </strong>男</p><p> <strong>地址: </strong></p><p> <strong>学校: </strong>深圳大学</p><p> <strong>年级: </strong>2026应届</p><p> <strong>专业: </strong>光电信息科学与工程</p><p> <strong>邮箱: </strong><a href="mailto:541194756@qq.com">541194756@qq.com</a></p><p> <strong>QQ: </strong>541194756</p><p> <strong>生日: </strong>2004/09/15</p></div></div><div class="flex-1"></div><img class="left-column-bottom" src="https://p.liiiu.cn/i/2024/04/14/661ab09243659.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt=""></div><div class="right-column"><div class="personality card"><div class="personality-info"><p class="type"> INTP</p><p class="type_name">思考者</p><div class="flex-1"></div><p class="learn_more"> 点击在 <a href="https://www.16personalities.com/ch/intp-%E4%BA%BA%E6%A0%BC" target="_blank" ref="noopener nofollower">16Personalities</a> 上了解更多</p></div><div class="personality-svg"><img class="no-lightbox svg" src="/config/img/intp.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="Personality SVG"></div></div><div class="description-and-social card"><p class="description">大家好！这里是清羽飞扬的小站。为什么叫清羽飞扬呢？因为“清扬”是我的名字，而“飞扬”代表着自由和轻盈，这与我的性格不谋而合。我是一个充满热情、富有同情心的人，喜欢与人交流，乐于分享我的想法和见解。在这里，我会分享我的生活点滴、兴趣爱好以及对世界的观察和思考。希望我的小站能给大家带来一些启发和乐趣。</p><div class="social-links"><a href="https://github.com/willow-god" target="_blank"><img class="no-lightbox" src="https://p.liiiu.cn/i/2024/07/27/66a461a3098aa.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="GitHub"></a><a href="https://gitee.com/willow-god" target="_blank"><img class="no-lightbox" src="https://p.liiiu.cn/i/2024/07/27/66a461c3dea80.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="Gitee"></a><a href="https://qm.qq.com/cgi-bin/qm_share/open_source_page?uin=3162475700&amp;jump_from=webapi" target="_blank"><img class="no-lightbox" src="https://p.liiiu.cn/i/2024/07/27/66a461b627dc2.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="QQ"></a></div></div></div></section><section class="skills-and-projects"><div class="skills card"><h2 class="section-title">技能</h2><div class="skills-grid"><div class="skill-category"><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633005bf0fd1e.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647df7fa.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647e1f10.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/26/6330ff27e5c9b.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647dea51.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2023/05/09/645a45854e093.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633001374747b.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="技术图标"></div></div><div class="skill-category category-2"><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006cc55e07.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006eee047b.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633006f9ab27d.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2023/04/11/6434a635e9726.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633007087a4dc.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/633005bf0fd1e.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647df7fa.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/25/63300647e1f10.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div><div class="skill-card"><img src="https://img02.anheyu.com/adminuploads/1/2022/09/26/6330ff27e5c9b.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="通用图标"></div></div></div><p class="learning"> 正在持续学习中</p></div><div class="projects card"><h2 class="section-title">项目</h2><div class="projects-grid"><div class="project"><a href="https://github.com/willow-god/Friend-Circle-Lite" target="_blank"><h3>Friend-Circle-lite</h3><p>轻量化友链朋友圈</p></a></div><div class="project"><a href="https://github.com/willow-god/hexo-safego" target="_blank"><h3>Hexo-Safego</h3><p>hexo插件之安全跳转中转页</p></a></div></div></div></section><section class="hobbies-and-evaluation"><div class="hobbies card"><h2 class="section-title">爱好</h2><ul class="hobbies-list"><li>阅读</li><li>写作</li><li>编程</li><li>摄影</li></ul></div><div class="self-evaluation card"><h2 class="section-title">评价</h2><p> <strong>思想: </strong>思想上乐观开朗，乐于助人，具有团队协作精神及创新意识。</p><p> <strong>工作: </strong>工作上极富责任心与信念感，对待工作认真负责，有较强的组织管理及动手能力。</p><p class="summary"> <strong>总结: </strong>人嘎嘎好！</p></div></section></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Heisenbergger</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
